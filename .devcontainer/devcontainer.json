@@ -1,8 +1,6 @@
 {
     "extensions": [
-        "vscode-icons-team.vscode-icons",
-        "James-Yu.latex-workshop",
-        "mosapride.zenkaku"
+        "James-Yu.latex-workshop"
     ],
     "build": { "dockerfile": "Dockerfile" },
     "settings": {
