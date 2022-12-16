@@ -1,0 +1,66 @@
+{
+    "extensions": [
+        "vscode-icons-team.vscode-icons",
+        "James-Yu.latex-workshop",
+        "mosapride.zenkaku"
+    ],
+    "build": { "dockerfile": "Dockerfile" },
+    "settings": {
+        "[tex]": {
+            "editor.tabSize": 2
+        },
+    
+        "[latex]": {
+            "editor.tabSize": 2
+        },
+    
+        "[bibtex]": {
+            "editor.tabSize": 2
+        },
+        "latex-workshop.latex.tools": [
+            {
+                "name": "latexmk",
+                "command": "latexmk",
+                "args": [
+                    "-silent",
+                    "-outdir=%OUTDIR%",
+                    "%DOC%"
+                ]
+            }
+        ],
+        "latex-workshop.latex.recipes": [
+            {
+                "name": "latexmk",
+                "tools": [
+                    "latexmk"
+                ]
+            }
+        ],
+        "latex-workshop.latex.outDir": "out",
+        "latex-workshop.latex.clean.fileTypes": [
+            "*.aux",
+            "*.bbl",
+            "*.blg",
+            "*.idx",
+            "*.ind",
+            "*.lof",
+            "*.lot",
+            "*.out",
+            "*.toc",
+            "*.acn",
+            "*.acr",
+            "*.alg",
+            "*.glg",
+            "*.glo",
+            "*.gls",
+            "*.ist",
+            "*.fls",
+            "*.log",
+            "*.fdb_latexmk",
+            "*.snm",
+            "*.nav",
+            "*.dvi",
+            "*.synctex.gz"
+        ]
+    }
+}
